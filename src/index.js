@@ -1,14 +1,30 @@
-import _ from 'lodash';
 import './style.css';
+import Score from './modules/score.js';
+import addScore from './modules/addScore.js';
+import listScore from './modules/interface.js';
 
-function component() {
-  const element = document.createElement('div');
+// Elements
 
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('hello');
+const list = document.getElementById('score-list');
+const form = document.getElementById('form');
 
-  return element;
-}
+// Array of scores
 
-document.body.appendChild(component());
+const scores = [];
+
+// interface
+
+listScore(scores, list);
+
+// form event
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const name = document.getElementById('name').value;
+  const score = document.getElementById('score').value;
+  const newScore = new Score(name, score);
+  addScore(scores, newScore);
+  document.getElementById('name').value = '';
+  document.getElementById('score').value = '';
+  listScore(scores, list);
+});

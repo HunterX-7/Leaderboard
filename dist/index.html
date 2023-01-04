@@ -22,9 +22,22 @@
     </div>
     <div class="container">
         <div class="row">
+            <h1 class="display-2 text-start">Leaderboard</h1>
+            <div class="row">
+                <div class="col">
+                    <div class="box"></div>
+                </div>
+            </div>
             <div class="col-6">
-                <div class="container pt-5 awesome-books" id="home">
-                    <h1 class="display-5 text-center">Leaderboard</h1>
+                <div class="container" id="home">
+                    <div class="row align-items-center text-center">
+                        <div class="col-8">
+                            <div><h2 class="display-5 text-center">Recent scores</h2></div>
+                        </div>
+                        <div class="col-4">
+                            <div><button class="btn btn-secondary btn-add" type="submit">Refresh</button></div>
+                        </div>
+                    </div>
                     <div class="container">
                         <table class="table table-striped mt-2">
                             <thead>
@@ -35,30 +48,20 @@
                                     <th scope="col"></th>
                                 </tr>
                             </thead>
-                            <tbody id="book-list"></tbody>
+                            <tbody id="score-list"></tbody>
                         </table>
                     </div>      
                 </div>
             </div>
             <div class="col-6">
-                <div class="row">
-                    <div class="col">
-                        <div class="box"></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="box"></div>
-                    </div>
-                </div>
-                <div class="container add-new" id="add">
+                <div class="container" id="add">
                     <h2 class="display-5 text-center">Add your score</h2>
                     <form id="form" action="">
                         <div class="form-group">
-                            <div class="row justify-content-center g-2">
-                                <div class="col-12"><input id="title" type="text" class="form-control" placeholder="Your name" required></div>
-                                <div class="col-12"><input id="author" type="text" class="form-control" placeholder="Your score" required></div>
-                                <div class="col-12"><button class="btn btn-primary btn-add" type="submit">Submit</button></div>
+                            <div class="row justify-content-center text-end g-2">
+                                <div class="col-12"><input id="name" type="text" class="form-control" placeholder="Your name" required></div>
+                                <div class="col-12"><input id="score" type="text" class="form-control" placeholder="Your score" required></div>
+                                <div class="col-12"><button class="btn btn-secondary btn-add" type="submit">Submit</button></div>
                             </div>
                         </div>
                     </form>
