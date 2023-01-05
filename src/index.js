@@ -2,6 +2,7 @@ import './style.css';
 // import addScore from './modules/addScore.js';
 // import listScore from './modules/interface.js';
 // import Score from './modules/score.js';
+import postData from './modules/postData.js';
 
 // Elements
 
@@ -13,9 +14,9 @@ const refresh = document.getElementById('refresh');
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-  const name = document.getElementById('name').value;
+  const user = document.getElementById('name').value;
   const score = document.getElementById('score').value;
-  // postData
+  postData(user, score);
   document.getElementById('name').value = '';
   document.getElementById('score').value = '';
 });
@@ -23,11 +24,11 @@ form.addEventListener('submit', (event) => {
 // refresh event
 
 refresh.addEventListener('click', async () => {
-  // getData
+  // const scores = await getData();
   const row = document.createElement('tr');
   scores.forEach((score) => {
     row.innerHTML = `
-            <td>${score.name}</td>
+            <td>${score.user}</td>
             <td>${score.score}</td>
             <td></td>
             <td></td>  
