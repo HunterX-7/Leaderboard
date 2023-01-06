@@ -98,7 +98,6 @@ The following test will run automatically as you try to pull request: -Lighthous
 
 > Coming soon...
 
-- [ ] **[Use of an API]**
 - [ ] **[Style the page to look more fun]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

@@ -35,7 +35,7 @@
                             <div><h2 class="display-5 text-center">Recent scores</h2></div>
                         </div>
                         <div class="col-4">
-                            <div><button class="btn btn-secondary btn-add" type="submit">Refresh</button></div>
+                            <div><button id="refresh" class="btn btn-secondary btn-add" type="submit">Refresh</button></div>
                         </div>
                     </div>
                     <div class="container border">
@@ -60,7 +60,7 @@
                         <div class="form-group">
                             <div class="row justify-content-center text-end g-2">
                                 <div class="col-12"><input id="name" type="text" class="form-control" placeholder="Your name" required></div>
-                                <div class="col-12"><input id="score" type="text" class="form-control" placeholder="Your score" required></div>
+                                <div class="col-12"><input id="score" type="number" min="0" max="100" class="form-control" placeholder="Your score" required></div>
                                 <div class="col-12"><button class="btn btn-secondary btn-add" type="submit">Submit</button></div>
                             </div>
                         </div>
