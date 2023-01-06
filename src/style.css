@@ -1,5 +1,30 @@
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Changa', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(../images/SL_043021_42650_02.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+
+h1,
+h2 {
+  color: white;
+}
+
+.custom-table {
+  background-color: #0d6db9;
+  border: 3px solid #0d6db9;
+}
+
+.bdr {
+  border-radius: 3px;
+  overflow: hidden;
 }
 
 .box {

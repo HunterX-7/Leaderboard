@@ -44,7 +44,7 @@
 
 ### 🚀 Live Demo <a name="live-demo"></a>
 
-[Live Demo Link](#) Coming soon...
+  [Live Demo Link](https://hunterx-7.github.io/Leaderboard/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -98,7 +98,7 @@ The following test will run automatically as you try to pull request: -Lighthous
 
 > Coming soon...
 
-- [ ] **[Style the page to look more fun]**
+- [ ] **[Add more interactivity to the page]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

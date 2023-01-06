@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script defer src="https://kit.fontawesome.com/fae7474c5f.js" crossorigin="anonymous"></script>
@@ -20,9 +21,14 @@
             <div class="box"></div>
         </div>
     </div>
+    <div class="row">
+        <div class="col">
+            <div class="box"></div>
+        </div>
+    </div>
     <div class="container">
         <div class="row">
-            <h1 class="display-2 text-start">Leaderboard</h1>
+            <h1 class="display-1 text-start">Leaderboard</h1>
             <div class="row">
                 <div class="col">
                     <div class="box"></div>
@@ -32,20 +38,18 @@
                 <div class="container" id="home">
                     <div class="row align-items-center text-center">
                         <div class="col-8">
-                            <div><h2 class="display-5 text-center">Recent scores</h2></div>
+                            <div><h2 class="display-4 text-center">Recent scores</h2></div>
                         </div>
                         <div class="col-4">
-                            <div><button id="refresh" class="btn btn-secondary btn-add" type="submit">Refresh</button></div>
+                            <div><button id="refresh" class="btn btn-warning btn-add" type="submit">Refresh</button></div>
                         </div>
                     </div>
-                    <div class="container border">
-                        <table class="table table-striped mt-2">
+                    <div class="container custom-table rounded">
+                        <table class="table table-light table-striped mt-2 mb-2 bdr">
                             <thead>
                                 <tr>
                                     <th scope="col">Name</th>
                                     <th scope="col">Score</th>
-                                    <th scope="col"></th>
-                                    <th scope="col"></th>
                                 </tr>
                             </thead>
                             <tbody id="score-list"></tbody>
@@ -55,13 +59,13 @@
             </div>
             <div class="col-6">
                 <div class="container" id="add">
-                    <h2 class="display-5 text-center">Add your score</h2>
+                    <h2 class="display-4 text-center">Add your score</h2>
                     <form id="form" action="">
                         <div class="form-group">
                             <div class="row justify-content-center text-end g-2">
                                 <div class="col-12"><input id="name" type="text" class="form-control" placeholder="Your name" required></div>
                                 <div class="col-12"><input id="score" type="number" min="0" max="100" class="form-control" placeholder="Your score" required></div>
-                                <div class="col-12"><button class="btn btn-secondary btn-add" type="submit">Submit</button></div>
+                                <div class="col-12"><button class="btn btn-warning btn-add" type="submit">Submit</button></div>
                             </div>
                         </div>
                     </form>

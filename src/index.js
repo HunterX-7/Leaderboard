@@ -20,9 +20,7 @@ const displayData = async () => {
     scoreRow += `
         <tr>
             <td>${score.user}</td>
-            <td>${score.score}</td>
-            <td></td>
-            <td></td>  
+            <td>${score.score}</td> 
         </tr>
         `;
     list.innerHTML = scoreRow;
